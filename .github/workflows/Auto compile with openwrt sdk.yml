@@ -30,6 +30,8 @@ jobs:
       passwall_version: ${{ steps.check_version.outputs.latest_version }}
       has_update: ${{ steps.check_version.outputs.has_update }}
     steps:
+      - name: Setup Debug Session
+        uses: csexton/debugger-action@master
       - name: Checkout
         uses: actions/checkout@main
         with:

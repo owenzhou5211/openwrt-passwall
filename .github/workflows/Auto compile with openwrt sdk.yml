@@ -4,7 +4,7 @@
 #
 name: "Auto compile with openwrt sdk"
 on:
-  repository_dispatch:
+  
   
   push:
     branches:
